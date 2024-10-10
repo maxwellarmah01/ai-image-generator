@@ -61,11 +61,7 @@ cd ai-image-generator
 
 ### Backend Setup
 
-1. Navigate to the backend directory:
-
-   ```bash
-   cd server
-   ```
+1. Navigate to the root directory:
 
 2. Install dependencies:
 
@@ -73,7 +69,7 @@ cd ai-image-generator
    npm install
    ```
 
-3. Create a `.env` file in the `server` directory with the following content:
+3. Create a `.env` file in the root directory with the following content:
 
    ```plaintext
    OPENAI_API_KEY=your_openai_api_key
@@ -83,7 +79,7 @@ cd ai-image-generator
 4. Start the server:
 
    ```bash
-   npm start
+   npm run dev
    ```
 
 ## Usage
