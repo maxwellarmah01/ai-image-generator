@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+# AI Image Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+The AI Image Generator is a web application that allows users to generate images using OpenAI's DALL-E model. Users can input a prompt, and upon clicking the "Generate" button, the application fetches images based on the provided prompt and displays them. The app features a dark mode for a better user experience.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Image Generation:** Enter a prompt to generate images using the DALL-E model.
+- **Dark Mode:** Toggle between light and dark themes.
+- **Responsive Design:** Works seamlessly on various screen sizes.
+- **Error Handling:** Displays toast notifications for user feedback.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Frontend:**
 
-### `npm test`
+  - React
+  - React-Bootstrap
+  - react-toastify (for toast notifications)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Backend:**
+  - Node.js
+  - Express
+  - OpenAI API
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js (v14 or higher)
+- npm (Node Package Manager)
+- OpenAI API Key (create an account at [OpenAI](https://openai.com/) if you don't have one)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Clone the Repository
 
-### `npm run eject`
+```bash
+git clone https://github.com/maxwellarmah01/ai-image-generator.git
+cd ai-image-generator
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Frontend Setup
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Navigate to the frontend directory:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   cd client
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Install dependencies:
 
-## Learn More
+   ```bash
+   npm install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Start the development server:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   npm start
+   ```
 
-### Code Splitting
+### Backend Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Navigate to the backend directory:
 
-### Analyzing the Bundle Size
+   ```bash
+   cd server
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. Install dependencies:
 
-### Making a Progressive Web App
+   ```bash
+   npm install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+3. Create a `.env` file in the `server` directory with the following content:
 
-### Advanced Configuration
+   ```plaintext
+   OPENAI_API_KEY=your_openai_api_key
+   PORT=5000
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+4. Start the server:
 
-### Deployment
+   ```bash
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Usage
 
-### `npm run build` fails to minify
+1. Open your browser and navigate to `http://localhost:3000`.
+2. Enter a prompt in the search bar.
+3. Click the "Generate" button to fetch images based on your prompt.
+4. Toggle dark mode using the button in the navbar.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contributing
+
+Contributions are welcome! If you have suggestions for improvements or find bugs, please create an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+
+## Acknowledgements
+
+- [OpenAI](https://openai.com/) for providing the DALL-E model.
+- [React](https://reactjs.org/) for the frontend framework.
+- [Node.js](https://nodejs.org/) and [Express](https://expressjs.com/) for the backend.
